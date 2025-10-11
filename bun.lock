@@ -11,8 +11,8 @@
     "types/cc-types-base": {
       "name": "@corebyte/cc-types-base",
       "devDependencies": {
+        "@jackmacwindows/lua-types": "^2.13.2",
         "@typescript-to-lua/language-extensions": "^1.19.0",
-        "lua-types": "^2.13.1",
       },
     },
     "types/cc-types-globals": {
@@ -50,9 +50,9 @@
 
     "@corebyte/cc-types-modules": ["@corebyte/cc-types-modules@workspace:types/cc-types-modules"],
 
-    "@typescript-to-lua/language-extensions": ["@typescript-to-lua/language-extensions@1.19.0", "", {}, "sha512-Os5wOKwviTD4LeqI29N0btYOjokSJ97iCf45EOjIABlb5IwNQy7AE/AqZJobRw3ywHH8+KzJUMkEirWPzh2tUA=="],
+    "@jackmacwindows/lua-types": ["@jackmacwindows/lua-types@2.13.2", "", {}, "sha512-XoqHmgtG1SLWzmMx8wQc0sJtPmrzjCFbiwNiBIZE7HOEXWdJi7NDKVlE1nl9A5745Yb5jIkfz2deOzMtHiHVcQ=="],
 
-    "lua-types": ["lua-types@2.13.1", "", {}, "sha512-rRwtvX6kS+5MpuO3xpvKsnYjdSDDI064Qq1OqX8gY+r+0l7m3dFLiZPDFoHqH22jaBpEvcHcPs6+WD7qkdmFsA=="],
+    "@typescript-to-lua/language-extensions": ["@typescript-to-lua/language-extensions@1.19.0", "", {}, "sha512-Os5wOKwviTD4LeqI29N0btYOjokSJ97iCf45EOjIABlb5IwNQy7AE/AqZJobRw3ywHH8+KzJUMkEirWPzh2tUA=="],
 
     "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
   }
