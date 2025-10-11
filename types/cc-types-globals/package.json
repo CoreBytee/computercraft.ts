@@ -1,0 +1,7 @@
+{
+    "name": "@corebyte/cc-types-globals",
+    "types": "index.d.ts",
+    "devDependencies": {
+        "@corebyte/cc-types-base": "*"
+    }
+}

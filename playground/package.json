@@ -1,0 +1,8 @@
+{
+    "name": "playground",
+    "devDependencies": {
+        "@corebyte/cc-types-base": "*",
+        "@corebyte/cc-types-globals": "*",
+        "@corebyte/cc-types-modules": "*"
+    }
+}
