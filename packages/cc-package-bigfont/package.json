@@ -1,0 +1,5 @@
+{
+	"name": "@corebyte/cc-package-bigfont",
+	"main": "./index",
+	"types": "index.d.ts"
+}
