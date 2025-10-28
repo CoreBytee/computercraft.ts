@@ -1,4 +1,4 @@
 {
-    "name": "@corebyte/cc-types-modules",
-    "types": "index.d.ts"
+	"name": "@corebyte/cc-types-modules",
+	"types": "index.d.ts"
 }

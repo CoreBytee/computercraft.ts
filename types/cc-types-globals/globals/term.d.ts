@@ -1,82 +1,115 @@
 /** @noSelfInFile **/
 
 interface ITerminal {
-    write(text: string): void;
-    blit(text: string, textColors: string, backgroundColors: string): void;
-    clear(): void;
-    clearLine(): void;
-    getCursorPos(): LuaMultiReturn<[number, number]>;
-    setCursorPos(x: number, y: number): void;
-    getCursorBlink(): boolean;
-    setCursorBlink(blink: boolean): void;
-    isColor(): boolean;
-    isColour(): boolean;
-    getSize(mode?: boolean | number): LuaMultiReturn<[number, number]>;
-    scroll(n: number): void;
-    getTextColor(): Color;
-    getTextColour(): Colour;
-    setTextColor(color: Color): void;
-    setTextColour(color: Colour): void;
-    getBackgroundColor(): Color;
-    getBackgroundColour(): Colour;
-    setBackgroundColor(color: Color): void;
-    setBackgroundColour(color: Colour): void;
-    getPaletteColor(color: Color): LuaMultiReturn<[number, number, number]>;
-    getPaletteColour(color: Colour): LuaMultiReturn<[number, number, number]>;
-    setPaletteColor(color: Color, rgb: number): void;
-    setPaletteColor(color: Color, r: number, g: number, b: number): void;
-    setPaletteColour(color: Colour, rgb: number): void;
-    setPaletteColour(color: Colour, r: number, g: number, b: number): void;
-    getGraphicsMode(): boolean | number;
-    setGraphicsMode(mode: boolean | number): void;
-    getPixel(x: number, y: number): number;
-    setPixel(x: number, y: number, color: Color): void;
-    getPixels(x: number, y: number, width: number, height: number, asString?: boolean): (string | Color[])[];
-    setPixels(x: number, y: number, data: Color | (string | Color[])[]): void;
-    getFrozen(): boolean;
-    setFrozen(frozen: boolean): void;
+	write(text: string): void;
+	blit(text: string, textColors: string, backgroundColors: string): void;
+	clear(): void;
+	clearLine(): void;
+	getCursorPos(): LuaMultiReturn<[number, number]>;
+	setCursorPos(x: number, y: number): void;
+	getCursorBlink(): boolean;
+	setCursorBlink(blink: boolean): void;
+	isColor(): boolean;
+	isColour(): boolean;
+	getSize(mode?: boolean | number): LuaMultiReturn<[number, number]>;
+	scroll(n: number): void;
+	getTextColor(): Color;
+	getTextColour(): Colour;
+	setTextColor(color: Color): void;
+	setTextColour(color: Colour): void;
+	getBackgroundColor(): Color;
+	getBackgroundColour(): Colour;
+	setBackgroundColor(color: Color): void;
+	setBackgroundColour(color: Colour): void;
+	getPaletteColor(color: Color): LuaMultiReturn<[number, number, number]>;
+	getPaletteColour(color: Colour): LuaMultiReturn<[number, number, number]>;
+	setPaletteColor(color: Color, rgb: number): void;
+	setPaletteColor(color: Color, r: number, g: number, b: number): void;
+	setPaletteColour(color: Colour, rgb: number): void;
+	setPaletteColour(color: Colour, r: number, g: number, b: number): void;
+	getGraphicsMode(): boolean | number;
+	setGraphicsMode(mode: boolean | number): void;
+	getPixel(x: number, y: number): number;
+	setPixel(x: number, y: number, color: Color): void;
+	getPixels(
+		x: number,
+		y: number,
+		width: number,
+		height: number,
+		asString?: boolean,
+	): (string | Color[])[];
+	setPixels(x: number, y: number, data: Color | (string | Color[])[]): void;
+	getFrozen(): boolean;
+	setFrozen(frozen: boolean): void;
 }
 
 declare namespace term {
-    function redirect(term: ITerminal): ITerminal;
-    function current(): ITerminal;
-    function native(): ITerminal;
-    function screenshot(): void;
-    function showMouse(mouse: boolean): void;
-    function write(text: string): void;
-    function blit(text: string, textColors: string, backgroundColors: string): void;
-    function clear(): void;
-    function clearLine(): void;
-    function getCursorPos(): LuaMultiReturn<[number, number]>;
-    function setCursorPos(x: number, y: number): void;
-    function getCursorBlink(): boolean;
-    function setCursorBlink(blink: boolean): void;
-    function isColor(): boolean;
-    function isColour(): boolean;
-    function getSize(mode?: boolean | number): LuaMultiReturn<[number, number]>;
-    function scroll(n: number): void;
-    function getTextColor(): Color;
-    function getTextColour(): Colour;
-    function setTextColor(color: Color): void;
-    function setTextColour(color: Colour): void;
-    function getBackgroundColor(): Color;
-    function getBackgroundColour(): Colour;
-    function setBackgroundColor(color: Color): void;
-    function setBackgroundColour(color: Colour): void;
-    function nativePaletteColor(color: number): LuaMultiReturn<[number, number, number]>;
-    function nativePaletteColour(colour: number): LuaMultiReturn<[number, number, number]>;
-    function getPaletteColor(color: Color): LuaMultiReturn<[number, number, number]>;
-    function getPaletteColour(color: Colour): LuaMultiReturn<[number, number, number]>;
-    function setPaletteColor(color: Color, rgb: number): void;
-    function setPaletteColor(color: Color, r: number, g: number, b: number): void;
-    function setPaletteColour(color: Colour, rgb: number): void;
-    function setPaletteColour(color: Colour, r: number, g: number, b: number): void;
-    function getGraphicsMode(): boolean | number;
-    function setGraphicsMode(mode: boolean | number): void;
-    function getPixel(x: number, y: number): number;
-    function setPixel(x: number, y: number, color: Color): void;
-    function getPixels(x: number, y: number, width: number, height: number, asString?: boolean): (string | Color[])[];
-    function setPixels(x: number, y: number, data: Color | (string | Color[])[]): void;
-    function getFrozen(): boolean;
-    function setFrozen(frozen: boolean): void;
+	function redirect(term: ITerminal): ITerminal;
+	function current(): ITerminal;
+	function native(): ITerminal;
+	function screenshot(): void;
+	function showMouse(mouse: boolean): void;
+	function write(text: string): void;
+	function blit(
+		text: string,
+		textColors: string,
+		backgroundColors: string,
+	): void;
+	function clear(): void;
+	function clearLine(): void;
+	function getCursorPos(): LuaMultiReturn<[number, number]>;
+	function setCursorPos(x: number, y: number): void;
+	function getCursorBlink(): boolean;
+	function setCursorBlink(blink: boolean): void;
+	function isColor(): boolean;
+	function isColour(): boolean;
+	function getSize(mode?: boolean | number): LuaMultiReturn<[number, number]>;
+	function scroll(n: number): void;
+	function getTextColor(): Color;
+	function getTextColour(): Colour;
+	function setTextColor(color: Color): void;
+	function setTextColour(color: Colour): void;
+	function getBackgroundColor(): Color;
+	function getBackgroundColour(): Colour;
+	function setBackgroundColor(color: Color): void;
+	function setBackgroundColour(color: Colour): void;
+	function nativePaletteColor(
+		color: number,
+	): LuaMultiReturn<[number, number, number]>;
+	function nativePaletteColour(
+		colour: number,
+	): LuaMultiReturn<[number, number, number]>;
+	function getPaletteColor(
+		color: Color,
+	): LuaMultiReturn<[number, number, number]>;
+	function getPaletteColour(
+		color: Colour,
+	): LuaMultiReturn<[number, number, number]>;
+	function setPaletteColor(color: Color, rgb: number): void;
+	function setPaletteColor(color: Color, r: number, g: number, b: number): void;
+	function setPaletteColour(color: Colour, rgb: number): void;
+	function setPaletteColour(
+		color: Colour,
+		r: number,
+		g: number,
+		b: number,
+	): void;
+	function getGraphicsMode(): boolean | number;
+	function setGraphicsMode(mode: boolean | number): void;
+	function getPixel(x: number, y: number): number;
+	function setPixel(x: number, y: number, color: Color): void;
+	function getPixels(
+		x: number,
+		y: number,
+		width: number,
+		height: number,
+		asString?: boolean,
+	): (string | Color[])[];
+	function setPixels(
+		x: number,
+		y: number,
+		data: Color | (string | Color[])[],
+	): void;
+	function getFrozen(): boolean;
+	function setFrozen(frozen: boolean): void;
 }

@@ -1,8 +1,8 @@
 {
-    "name": "@corebyte/cc-types-base",
-    "types": "index.d.ts",
-    "devDependencies": {
-        "@jackmacwindows/lua-types": "^2.13.2",
-        "@typescript-to-lua/language-extensions": "^1.19.0"
-    }
+	"name": "@corebyte/cc-types-base",
+	"types": "index.d.ts",
+	"devDependencies": {
+		"@jackmacwindows/lua-types": "^2.13.2",
+		"@typescript-to-lua/language-extensions": "^1.19.0"
+	}
 }
