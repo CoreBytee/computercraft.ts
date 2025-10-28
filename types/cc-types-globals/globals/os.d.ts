@@ -12,6 +12,7 @@ declare type LuaDate = {
 	isdst: boolean;
 };
 
+/** @noSelf */
 declare namespace os {
 	function version(): string;
 	function getComputerID(): number;

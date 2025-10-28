@@ -15,6 +15,7 @@ type SerializeJSONOptions = {
 	unicode_strings?: boolean;
 };
 
+/** @noSelf */
 declare namespace textutils {
 	var empty_json_array: Object;
 	var json_null: Object;

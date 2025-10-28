@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace redstone {
 	function getSides(): string[];
 	function setOutput(side: string, on: boolean): void;

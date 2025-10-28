@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace rednet {
 	var CHANNEL_BROADCAST: number;
 	var CHANNEL_REPEAT: number;

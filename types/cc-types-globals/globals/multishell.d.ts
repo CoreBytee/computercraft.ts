@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace multishell {
 	function getFocus(): number;
 	function setFocus(n: number): boolean;

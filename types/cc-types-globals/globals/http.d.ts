@@ -15,6 +15,7 @@ type WebSocketOptions = {
 	timeout?: number;
 };
 
+/** @noSelf */
 declare class HTTPResponse {
 	public getResponseCode(): number;
 	public getResponseHeaders(): LuaMap<string, string>;
@@ -24,12 +25,14 @@ declare class HTTPResponse {
 	public close(): void;
 }
 
+/** @noSelf */
 declare class WebSocket {
 	public receive(timeout?: number): string | undefined;
 	public send(message: string, binary?: boolean): void;
 	public close(): void;
 }
 
+/** @noSelf */
 declare namespace http {
 	function request(
 		url: string,

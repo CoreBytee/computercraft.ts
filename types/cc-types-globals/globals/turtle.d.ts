@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace turtle {
 	function craft(
 		quantity?: number,

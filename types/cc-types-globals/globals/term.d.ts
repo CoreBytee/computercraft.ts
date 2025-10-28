@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 interface ITerminal {
 	write(text: string): void;
 	blit(text: string, textColors: string, backgroundColors: string): void;
@@ -43,6 +44,7 @@ interface ITerminal {
 	setFrozen(frozen: boolean): void;
 }
 
+/** @noSelf */
 declare namespace term {
 	function redirect(term: ITerminal): ITerminal;
 	function current(): ITerminal;

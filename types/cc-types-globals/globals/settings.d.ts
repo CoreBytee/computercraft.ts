@@ -6,6 +6,7 @@ type SettingOptions = {
 	type?: string;
 };
 
+/** @noSelf */
 declare namespace settings {
 	function define(name: string, options?: SettingOptions): void;
 	function undefine(name: string): void;

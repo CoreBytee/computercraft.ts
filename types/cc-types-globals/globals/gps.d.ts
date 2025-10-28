@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace gps {
 	var CHANNEL_GPS: number;
 	function locate(

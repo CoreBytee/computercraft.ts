@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace shell {
 	function exit(): void;
 	function dir(): string;

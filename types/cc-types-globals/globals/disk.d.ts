@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace disk {
 	function isPresent(name: string): boolean;
 	function getLabel(name: string): string | undefined;

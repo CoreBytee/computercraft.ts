@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare class ReadFileHandle {
 	public close(): void;
 	public seek(whence?: "cur" | "set" | "end", offset?: number): number;
@@ -25,6 +26,7 @@ type FileAttributes = {
 	modified: number;
 };
 
+/** @noSelf */
 declare const fs: {
 	list(this: void, path: string): string[];
 	exists(this: void, path: string): boolean;

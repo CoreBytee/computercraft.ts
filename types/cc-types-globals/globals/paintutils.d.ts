@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace paintutils {
 	function parseImage(image: string): number[][] | undefined;
 	function loadImage(path: string): number[][] | undefined;

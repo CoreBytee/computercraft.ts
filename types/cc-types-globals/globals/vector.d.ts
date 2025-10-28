@@ -1,6 +1,7 @@
 /** @noSelfInFile **/
 
 /** @customConstructor vector.new */
+/** @noSelf */
 declare class Vector {
 	constructor(x: number, y: number, z: number);
 	public x: number;

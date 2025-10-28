@@ -1,5 +1,6 @@
 /** @noSelfInFile **/
 
+/** @noSelf */
 declare namespace help {
 	function path(): string;
 	function setPath(path: string): void;

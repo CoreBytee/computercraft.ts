@@ -2,6 +2,7 @@
 
 type Color = number;
 
+/** @noSelf */
 declare namespace colors {
 	var white: Color;
 	var orange: Color;
