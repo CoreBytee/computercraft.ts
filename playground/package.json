@@ -1,8 +1,10 @@
 {
-    "name": "playground",
-    "devDependencies": {
-        "@corebyte/cc-types-base": "*",
-        "@corebyte/cc-types-globals": "*",
-        "@corebyte/cc-types-modules": "*"
-    }
+	"name": "playground",
+	"private": true,
+	"devDependencies": {
+		"@corebyte/cc-types-base": "*",
+		"@corebyte/cc-types-globals": "*",
+		"@corebyte/cc-types-modules": "*",
+		"@corebyte/cc-types-create":"*"
+	}
 }
