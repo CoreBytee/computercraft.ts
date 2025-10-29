@@ -1,4 +1,6 @@
 {
 	"name": "@corebyte/cc-types-modules",
-	"types": "index.d.ts"
+	"types": "index.d.ts",
+	"version": "1.0.1",
+	"license": "MIT"
 }

@@ -1,15 +1,22 @@
 {
 	"name": "typecraft",
+	"version": "1.0.1",
+	"private": true,
+	"type": "module",
 	"module": "index.ts",
 	"devDependencies": {
 		"@biomejs/biome": "2.3.1",
 		"@jackmacwindows/typescript-to-lua": "^1.22.0",
 		"typescript": "^5.9.3"
 	},
-	"private": true,
-	"type": "module",
 	"workspaces": [
+		"playground",
+		"scripts",
 		"packages/*",
 		"types/*"
-	]
+	],
+	"scripts": {
+		"publish-all": "bun run ./scripts/publish-all.ts",
+		"lint": "biome check --fix"
+	}
 }

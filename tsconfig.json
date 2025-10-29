@@ -9,9 +9,19 @@
 		"types": [
 			"@corebyte/cc-types-base",
 			"@corebyte/cc-types-globals",
-			"@corebyte/cc-types-modules"
+			"@corebyte/cc-types-modules",
+			"@corebyte/cc-types-create"
 		]
 	},
+
+	"include": ["./playground/**/*.ts"],
+
+	"exclude": [
+		"node_modules",
+		"./node_modules",
+		"./node_modules/*",
+		"./node_modules/@types/bun/index.d.ts"
+	],
 
 	"tstl": {
 		"buildMode": "default",
