@@ -1,0 +1,11 @@
+{
+	"name": "scripts",
+	"private": true,
+	"dependencies": {
+		"fs-extra": "^11.3.2"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/fs-extra": "^11.0.4"
+	}
+}
