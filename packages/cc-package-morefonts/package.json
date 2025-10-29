@@ -1,0 +1,5 @@
+{
+	"name": "@corebyte/cc-package-morefonts",
+	"main": "./index",
+	"types": "index.d.ts"
+}
