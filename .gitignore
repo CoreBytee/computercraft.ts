@@ -1,2 +1,8 @@
+# Secrets
+.env
+
+# Dependencies
 node_modules
+
+# Build output
 startup.lua
